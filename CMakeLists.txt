@@ -53,6 +53,8 @@ if(NOT ${RPCLIB_CXX_STANDARD} EQUAL 14 AND
 endif()
 
 set(CMAKE_CXX_STANDARD ${RPCLIB_CXX_STANDARD})
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 #
 # Compile & install the library
