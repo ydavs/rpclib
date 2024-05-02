@@ -182,6 +182,8 @@ target_include_directories(
   PRIVATE ${RPCLIB_DEPENDENCIES}/include
   )
 
+
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/Release)
 install(TARGETS ${PROJECT_NAME} DESTINATION lib EXPORT rpclibTargets)
 install(DIRECTORY include/
   DESTINATION include
